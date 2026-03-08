@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Single Want — คนโสดต้องการอะไร เราจัดให้</title>
+
+  <!-- ════ SEO ════ -->
+  <meta name="title" content="What Single Want — คนโสดต้องการอะไร เราจัดให้" />
+  <meta name="description" content="Insight, Content, Deals และ Marketplace สำหรับคนโสดที่ใช้ชีวิตเต็มที่ ค้นพบสิ่งที่คุณต้องการได้ที่นี่" />
+  <meta name="keywords" content="คนโสด, what single want, deals คนโสด, solo lifestyle, single thailand" />
+  <link rel="canonical" href="https://www.whatsinglewant.com/" />
+
+  <!-- ════ Open Graph ════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.whatsinglewant.com/" />
+  <meta property="og:title" content="What Single Want — คนโสดต้องการอะไร เราจัดให้" />
+  <meta property="og:description" content="Insight, Content, Deals และ Marketplace สำหรับคนโสดที่ใช้ชีวิตเต็มที่" />
+  <meta property="og:image" content="https://www.whatsinglewant.com/og-image.jpg" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- ════ Twitter/X ════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Single Want" />
+  <meta name="twitter:description" content="คนโสดต้องการอะไร เราจัดให้" />
+  <meta name="twitter:image" content="https://www.whatsinglewant.com/og-image.jpg" />
+
+  <!-- ════ Favicon ════ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/favicon.ico" />
+
+  <!-- ════ Google Analytics — แทนที่ G-XXXXXXXXXX ════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #faf6f0;
+      --warm: #f5ede0;
+      --terracotta: #c4622d;
+      --terra-light: #e07a47;
+      --terra-dim: rgba(196,98,45,0.12);
+      --forest: #1e3a2f;
+      --forest-mid: #2d5040;
+      --forest-light: rgba(30,58,47,0.08);
+      --charcoal: #1a1a1a;
+      --grey: #6b6b6b;
+      --grey-light: #c8c0b4;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'Instrument Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--cream);
+      border-bottom: 1px solid var(--grey-light);
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--forest);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-logo span { color: var(--terracotta); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--grey);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--terracotta); }
+
+    .nav-pill {
+      background: var(--forest);
+      color: var(--cream);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .nav-pill:hover {
+      background: var(--terracotta);
+      transform: translateY(-1px);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 5rem 2.5rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--terra-dim);
+      color: var(--terracotta);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-tag::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--terracotta);
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+      color: var(--forest);
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--terracotta);
+      font-weight: 300;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--grey);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 42ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-terra {
+      background: var(--terracotta);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-terra:hover {
+      background: var(--terra-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(196,98,45,0.3);
+    }
+
+    .btn-ghost {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--forest);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: gap 0.2s;
+    }
+
+    .btn-ghost:hover { gap: 0.9rem; }
+
+    /* Hero visual */
+    .hero-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
+    }
+
+    .hero-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    .hero-card.tall { grid-row: span 2; }
+
+    .card-emoji { font-size: 1.8rem; margin-bottom: 0.75rem; }
+
+    .card-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 0.4rem;
+    }
+
+    .card-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--forest);
+      line-height: 1.3;
+    }
+
+    .card-stat {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--terracotta);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-desc {
+      font-size: 0.75rem;
+      color: var(--grey);
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+
+    /* ── 3 PILLARS ── */
+    .pillars {
+      background: var(--forest);
+      padding: 5rem 2.5rem;
+      margin: 0;
+    }
+
+    .pillars-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pillars-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(250,246,240,0.5);
+      margin-bottom: 1rem;
+    }
+
+    .pillars-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 800;
+      color: var(--cream);
+      margin-bottom: 3.5rem;
+      letter-spacing: -0.02em;
+      max-width: 20ch;
+    }
+
+    .pillars-title em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--terra-light);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: rgba(250,246,240,0.08);
+      border: 1.5px solid rgba(250,246,240,0.08);
+    }
+
+    .pillar {
+      background: var(--forest);
+      padding: 2.5rem;
+      transition: background 0.3s;
+      cursor: default;
+    }
+
+    .pillar:hover { background: var(--forest-mid); }
+
+    .pillar-num {
+      font-family: 'Fraunces', serif;
+      font-size: 4rem;
+      font-weight: 800;
+      color: rgba(250,246,240,0.06);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .pillar:hover .pillar-num { color: rgba(250,246,240,0.12); }
+
+    .pillar-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .pillar-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .pillar-desc {
+      font-size: 0.85rem;
+      color: rgba(250,246,240,0.6);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .pillar-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .pillar-items li {
+      font-size: 0.78rem;
+      color: rgba(250,246,240,0.5);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .pillar-items li::before {
+      content: '→';
+      color: var(--terra-light);
+      flex-shrink: 0;
+    }
+
+    /* ── SURVEY ── */
+    .survey-section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .survey-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 1rem;
+    }
+
+    .survey-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 800;
+      color: var(--forest);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .survey-desc {
+      font-size: 0.9rem;
+      color: var(--grey);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .survey-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    }
+
+    .survey-q {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .survey-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .survey-opt {
+      border: 1.5px solid var(--grey-light);
+      border-radius: 10px;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .survey-opt:hover {
+      border-color: var(--terracotta);
+      background: var(--terra-dim);
+      color: var(--terracotta);
+    }
+
+    .survey-opt.selected {
+      border-color: var(--terracotta);
+      background: var(--terra-dim);
+      color: var(--terracotta);
+    }
+
+    .opt-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--grey-light);
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .survey-opt.selected .opt-dot {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+    }
+
+    .survey-submit {
+      width: 100%;
+      background: var(--terracotta);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 0.9rem;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .survey-submit:hover {
+      background: var(--terra-light);
+    }
+
+    .survey-note {
+      margin-top: 0.75rem;
+      font-size: 0.7rem;
+      color: var(--grey);
+      text-align: center;
+    }
+
+    /* ── DEALS ── */
+    .deals-section {
+      background: var(--warm);
+      padding: 5rem 2.5rem;
+      border-top: 1px solid var(--grey-light);
+    }
+
+    .deals-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .deals-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2.5rem;
+    }
+
+    .deals-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 800;
+      color: var(--forest);
+      letter-spacing: -0.02em;
+    }
+
+    .deals-title em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--terracotta);
+    }
+
+    .see-all-link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+
+    .see-all-link:hover { gap: 0.8rem; }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .deal-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .deal-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+
+    .deal-img {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+    }
+
+    .deal-img.travel { background: linear-gradient(135deg, #d4e8d0 0%, #a8d4a0 100%); }
+    .deal-img.food { background: linear-gradient(135deg, #fde8d0 0%, #f5c89a 100%); }
+    .deal-img.wellness { background: linear-gradient(135deg, #d0dff5 0%, #a0bce8 100%); }
+
+    .deal-body { padding: 1.25rem; }
+
+    .deal-cat {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 0.4rem;
+    }
+
+    .deal-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--forest);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .deal-desc {
+      font-size: 0.78rem;
+      color: var(--grey);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .deal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .deal-badge {
+      background: var(--terra-dim);
+      color: var(--terracotta);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.3rem 0.75rem;
+      border-radius: 100px;
+    }
+
+    .deal-cta {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--forest);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: gap 0.2s;
+    }
+
+    .deal-card:hover .deal-cta { gap: 0.6rem; }
+
+    /* ── ECOSYSTEM ── */
+    .eco-section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .eco-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 800;
+      color: var(--forest);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .eco-sub {
+      font-size: 0.9rem;
+      color: var(--grey);
+      margin-bottom: 3rem;
+    }
+
+    .eco-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .eco-link {
+      background: var(--forest-light);
+      border: 1.5px solid rgba(30,58,47,0.12);
+      border-radius: 12px;
+      padding: 1.25rem 2rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      min-width: 220px;
+    }
+
+    .eco-link:hover {
+      background: var(--forest);
+      border-color: var(--forest);
+      transform: translateY(-2px);
+    }
+
+    .eco-link-domain {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 0.4rem;
+    }
+
+    .eco-link:hover .eco-link-domain { color: var(--terra-light); }
+
+    .eco-link-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--forest);
+    }
+
+    .eco-link:hover .eco-link-name { color: var(--cream); }
+
+    /* ── JOIN ── */
+    .join-section {
+      background: var(--forest);
+      padding: 5rem 2.5rem;
+      text-align: center;
+    }
+
+    .join-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(250,246,240,0.1);
+      color: var(--cream);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .join-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .join-title em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--terra-light);
+    }
+
+    .join-sub {
+      font-size: 0.9rem;
+      color: rgba(250,246,240,0.6);
+      margin-bottom: 2.5rem;
+      max-width: 40ch;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    .join-form {
+      display: flex;
+      gap: 0;
+      max-width: 420px;
+      margin: 0 auto 1rem;
+      border-radius: 100px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .join-input {
+      flex: 1;
+      background: var(--cream);
+      border: none;
+      padding: 1rem 1.5rem;
+      color: var(--charcoal);
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .join-btn {
+      background: var(--terracotta);
+      color: var(--white);
+      border: none;
+      padding: 1rem 1.75rem;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .join-btn:hover { background: var(--terra-light); }
+
+    .join-note {
+      font-size: 0.7rem;
+      color: rgba(250,246,240,0.4);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      padding: 2.5rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--cream);
+    }
+
+    .footer-logo span { color: var(--terracotta); }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.72rem;
+      color: rgba(250,246,240,0.4);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--cream); }
+
+    .footer-copy {
+      font-size: 0.65rem;
+      color: rgba(250,246,240,0.25);
+    }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; gap: 2.5rem; padding: 3rem 1.25rem; }
+      .hero-visual { display: none; }
+      .pillars { padding: 3.5rem 1.25rem; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .survey-section { grid-template-columns: 1fr; gap: 2.5rem; padding: 3.5rem 1.25rem; }
+      .deals-section { padding: 3.5rem 1.25rem; }
+      .deals-grid { grid-template-columns: 1fr; }
+      .deals-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .eco-section { padding: 3.5rem 1.25rem; }
+      .join-section { padding: 3.5rem 1.25rem; }
+      .join-form { flex-direction: column; border-radius: 12px; }
+      footer { padding: 2rem 1.25rem; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">What <span>Single</span> Want</a>
+    <ul class="nav-links">
+      <li><a href="#survey">Survey</a></li>
+      <li><a href="#deals">Deals</a></li>
+      <li><a href="#content">Content</a></li>
+    </ul>
+    <a class="nav-pill" href="#join">Join Free</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Daily Utility Hub สำหรับคนโสด</div>
+      <h1 class="hero-title">
+        คนโสด<br>
+        ต้องการอะไร<br>
+        <em>เราจัดให้</em>
+      </h1>
+      <p class="hero-sub">
+        Insight จากคนโสดจริงๆ · Content ที่ใช้ได้จริง · Deals ที่ curate มาเพื่อคุณ
+        ครบในที่เดียว อัปเดตทุกวัน
+      </p>
+      <div class="hero-actions">
+        <a class="btn-terra" href="#survey">ตอบ Survey วันนี้</a>
+        <a class="btn-ghost" href="#deals">ดู Deals →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="card-emoji">📊</div>
+        <div class="card-label">Insight ล่าสุด</div>
+        <div class="card-stat">8,200+</div>
+        <div class="card-title">คนโสดตอบแล้ว</div>
+        <div class="card-desc">สำรวจล่าสุด: คนโสดใช้เงินกับอะไรมากที่สุด?</div>
+      </div>
+      <div class="hero-card">
+        <div class="card-emoji">🛒</div>
+        <div class="card-label">Deal ใหม่</div>
+        <div class="card-title">Solo Travel Package เชียงใหม่</div>
+        <div class="card-desc">ลด 25% สำหรับ member</div>
+      </div>
+      <div class="hero-card tall">
+        <div class="card-emoji">🗺️</div>
+        <div class="card-label">Content ยอดนิยม</div>
+        <div class="card-stat">Solo</div>
+        <div class="card-title">เดินทางคนเดียวครั้งแรก — ทำยังไงให้ไม่กลัว</div>
+        <div class="card-desc">อ่านแล้ว 12,400 คน · Solo Travel</div>
+      </div>
+      <div class="hero-card">
+        <div class="card-emoji">🎟️</div>
+        <div class="card-label">กำลังจะมา</div>
+        <div class="card-title">Single Expo 2025</div>
+        <div class="card-desc">Early bird เปิดเร็วๆ นี้</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 PILLARS -->
+  <section class="pillars reveal" id="about">
+    <div class="pillars-inner">
+      <div class="pillars-label">ทำไมต้อง whatsinglewant</div>
+      <h2 class="pillars-title">ครบ 3 ด้าน<br><em>ในที่เดียว</em></h2>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <div class="pillar-icon">📊</div>
+          <div class="pillar-name">KNOW</div>
+          <div class="pillar-desc">ข้อมูลจริงจากคนโสดไทย — สำรวจทุกเดือน เห็นผลทันที</div>
+          <ul class="pillar-items">
+            <li>Survey ประจำเดือน</li>
+            <li>Insight Reports</li>
+            <li>Data Dashboard สาธารณะ</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <div class="pillar-icon">📖</div>
+          <div class="pillar-name">CONTENT</div>
+          <div class="pillar-desc">บทความ how-to, reviews และ lifestyle ที่ตรงกับชีวิตคนโสดจริงๆ</div>
+          <ul class="pillar-items">
+            <li>Solo Travel</li>
+            <li>Money & Finance</li>
+            <li>Food, Health, Self Dev</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <div class="pillar-icon">🛒</div>
+          <div class="pillar-name">GET</div>
+          <div class="pillar-desc">Deals และ Marketplace ที่ curate มาสำหรับคนโสดโดยเฉพาะ</div>
+          <ul class="pillar-items">
+            <li>Solo-friendly deals</li>
+            <li>Partner offers</li>
+            <li>ซื้อผ่าน One Wallet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SURVEY -->
+  <section class="survey-section reveal" id="survey">
+    <div>
+      <div class="survey-label">Survey ประจำสัปดาห์</div>
+      <h2 class="survey-title">ความเห็น<br>ของคุณ<br>สำคัญ</h2>
+      <p class="survey-desc">
+        ตอบ survey สั้นๆ ทุกสัปดาห์ — ได้ points สะสมใน One Wallet
+        และข้อมูลนี้จะกลายเป็น insight ที่ช่วยให้ brands ทำสิ่งที่ดีกว่าสำหรับคุณ
+      </p>
+      <div style="display:flex;gap:2rem;margin-top:1.5rem;">
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.8rem;font-weight:800;color:var(--terracotta)">8,200+</div>
+          <div style="font-size:0.75rem;color:var(--grey)">คนตอบแล้ว</div>
+        </div>
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.8rem;font-weight:800;color:var(--terracotta)">50+</div>
+          <div style="font-size:0.75rem;color:var(--grey)">surveys ที่ผ่านมา</div>
+        </div>
+        <div>
+          <div style="font-family:'Fraunces',serif;font-size:1.8rem;font-weight:800;color:var(--terracotta)">+20</div>
+          <div style="font-size:0.75rem;color:var(--grey)">points ต่อครั้ง</div>
+        </div>
+      </div>
+    </div>
+    <div class="survey-card">
+      <div class="survey-q">🗳️ สัปดาห์นี้: คนโสดใช้เวลาว่างส่วนใหญ่ทำอะไร?</div>
+      <div class="survey-options" id="surveyOpts">
+        <div class="survey-opt" onclick="selectOpt(this)">
+          <div class="opt-dot"></div>เดินทาง / ท่องเที่ยว
+        </div>
+        <div class="survey-opt" onclick="selectOpt(this)">
+          <div class="opt-dot"></div>พัฒนาตัวเอง / เรียนรู้ใหม่
+        </div>
+        <div class="survey-opt" onclick="selectOpt(this)">
+          <div class="opt-dot"></div>ออกกำลังกาย / ดูแลสุขภาพ
+        </div>
+        <div class="survey-opt" onclick="selectOpt(this)">
+          <div class="opt-dot"></div>พักผ่อน / อยู่บ้าน
+        </div>
+      </div>
+      <button class="survey-submit" onclick="submitSurvey()">ส่งคำตอบ (+20 points)</button>
+      <div class="survey-note">สมัคร free เพื่อสะสม points</div>
+    </div>
+  </section>
+
+  <!-- DEALS -->
+  <section class="deals-section reveal" id="deals">
+    <div class="deals-inner">
+      <div class="deals-header">
+        <h2 class="deals-title">Deals สำหรับ<br><em>คนโสด</em></h2>
+        <a class="see-all-link" href="#">ดูทั้งหมด →</a>
+      </div>
+      <div class="deals-grid">
+        <div class="deal-card">
+          <div class="deal-img travel">🏔️</div>
+          <div class="deal-body">
+            <div class="deal-cat">Solo Travel</div>
+            <div class="deal-name">Solo Package เชียงใหม่ 3 วัน 2 คืน</div>
+            <div class="deal-desc">ที่พัก + กิจกรรม + ประกันการเดินทาง ออกแบบสำหรับคนเดียว</div>
+            <div class="deal-footer">
+              <div class="deal-badge">ลด 25%</div>
+              <div class="deal-cta">ดู Deal →</div>
+            </div>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-img food">🍜</div>
+          <div class="deal-body">
+            <div class="deal-cat">Food</div>
+            <div class="deal-name">Single Portion Meal Kit สัปดาห์ละ 5 มื้อ</div>
+            <div class="deal-desc">ส่งตรงถึงบ้าน ไม่ต้องทำเยอะ ไม่มีเหลือทิ้ง</div>
+            <div class="deal-footer">
+              <div class="deal-badge">สมาชิก</div>
+              <div class="deal-cta">ดู Deal →</div>
+            </div>
+          </div>
+        </div>
+        <div class="deal-card">
+          <div class="deal-img wellness">🧘</div>
+          <div class="deal-body">
+            <div class="deal-cat">Wellness</div>
+            <div class="deal-name">ประกันสุขภาพ Single Plan — คุ้มกว่า ไม่มี add-on ไม่ใช้</div>
+            <div class="deal-desc">ออกแบบสำหรับคนที่ไม่มีผู้พึ่งพา ราคาดีกว่าแพ็คเกจครอบครัว</div>
+            <div class="deal-footer">
+              <div class="deal-badge">Exclusive</div>
+              <div class="deal-cta">ดู Deal →</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM -->
+  <section class="eco-section reveal">
+    <h2 class="eco-title">ส่วนหนึ่งของ Single Ecosystem</h2>
+    <p class="eco-sub">One login · One wallet · One world สำหรับคนโสด</p>
+    <div class="eco-links">
+      <a class="eco-link" href="https://www.ministryofsingle.com">
+        <div class="eco-link-domain">ministryofsingle.com</div>
+        <div class="eco-link-name">🏛️ Ministry of Single</div>
+      </a>
+      <a class="eco-link" href="https://www.whatsinglewant.com">
+        <div class="eco-link-domain">whatsinglewant.com</div>
+        <div class="eco-link-name">🔍 What Single Want</div>
+      </a>
+      <a class="eco-link" href="https://www.singleexpo.com">
+        <div class="eco-link-domain">singleexpo.com</div>
+        <div class="eco-link-name">🎪 Single Expo</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join-section reveal" id="join">
+    <div class="join-tag">เข้าร่วมฟรี</div>
+    <h2 class="join-title">คนโสดต้องการอะไร<br><em>เราจัดให้</em></h2>
+    <p class="join-sub">รับ deals, content และ survey ใหม่ทุกสัปดาห์ สะสม points ใช้ได้ทั้ง ecosystem</p>
+    <div class="join-form">
+      <input class="join-input" type="email" placeholder="อีเมลของคุณ" id="joinEmail" />
+      <button class="join-btn" onclick="joinNow()">เข้าร่วมฟรี</button>
+    </div>
+    <div class="join-note">ฟรีตลอด · ไม่มีสแปม · ออกได้ทุกเมื่อ</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">What <span>Single</span> Want</div>
+      <ul class="footer-links">
+        <li><a href="https://www.ministryofsingle.com">Ministry of Single</a></li>
+        <li><a href="https://www.singleexpo.com">Single Expo</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer-copy">© 2025 What Single Want · Part of Single Ecosystem</div>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Survey interaction
+    function selectOpt(el) {
+      document.querySelectorAll('.survey-opt').forEach(o => o.classList.remove('selected'));
+      el.classList.add('selected');
+    }
+
+    function submitSurvey() {
+      const selected = document.querySelector('.survey-opt.selected');
+      if (!selected) { alert('กรุณาเลือกคำตอบก่อนครับ'); return; }
+      const btn = document.querySelector('.survey-submit');
+      btn.textContent = '✓ บันทึกแล้ว! +20 points';
+      btn.style.background = '#2d5040';
+    }
+
+    // Join form
+    function joinNow() {
+      const email = document.getElementById('joinEmail');
+      if (email.value && email.value.includes('@')) {
+        email.value = '';
+        email.placeholder = '✓ ยินดีต้อนรับ!';
+        email.style.background = '#f0faf0';
+      } else {
+        email.style.border = '2px solid #c0392b';
+        email.placeholder = 'กรุณากรอกอีเมลที่ถูกต้อง';
+      }
+    }
+  </script>
+</body>
+</html>
