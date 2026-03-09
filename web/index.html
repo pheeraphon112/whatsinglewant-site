@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>What Single Want — คนโสดต้องการอะไร เราจัดให้</title>
+
+  <!-- ════ SEO ════ -->
+  <meta name="title" content="What Single Want — คนโสดต้องการอะไร เราจัดให้" />
+  <meta name="description" content="Insight, Content, Deals และ Marketplace สำหรับคนโสดที่ใช้ชีวิตเต็มที่ ค้นพบสิ่งที่คุณต้องการได้ที่นี่" />
+  <meta name="keywords" content="คนโสด, what single want, deals คนโสด, solo lifestyle, single thailand" />
+  <link rel="canonical" href="https://www.whatsinglewant.com/" />
+
+  <!-- ════ Open Graph ════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.whatsinglewant.com/" />
+  <meta property="og:title" content="What Single Want — คนโสดต้องการอะไร เราจัดให้" />
+  <meta property="og:description" content="Insight, Content, Deals และ Marketplace สำหรับคนโสดที่ใช้ชีวิตเต็มที่" />
+  <meta property="og:image" content="https://www.whatsinglewant.com/og-image.jpg" />
+  <meta property="og:locale" content="th_TH" />
+
+  <!-- ════ Twitter/X ════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Single Want" />
+  <meta name="twitter:description" content="คนโสดต้องการอะไร เราจัดให้" />
+  <meta name="twitter:image" content="https://www.whatsinglewant.com/og-image.jpg" />
+
+  <!-- ════ Favicon ════ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/favicon.ico" />
+
+  <!-- ════ Google Analytics — แทนที่ G-XXXXXXXXXX ════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #faf6f0;
+      --warm: #f5ede0;
+      --terracotta: #c4622d;
+      --terra-light: #e07a47;
+      --terra-dim: rgba(196,98,45,0.12);
+      --forest: #1e3a2f;
+      --forest-mid: #2d5040;
+      --forest-light: rgba(30,58,47,0.08);
+      --charcoal: #1a1a1a;
+      --grey: #6b6b6b;
+      --grey-light: #c8c0b4;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'Instrument Sans', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+
+    /* ── PAGE LOAD ANIMATION ── */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--cream);
+      border-bottom: 1px solid transparent;
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    nav.scrolled {
+      border-bottom-color: rgba(196,98,45,0.15);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .nav-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-logo svg {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+
+    .nav-logo span {
+      color: var(--terracotta);
+    }
+
+    .nav-logo:hover {
+      opacity: 0.8;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.25rem;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links a:hover {
+      color: var(--terracotta);
+      border-bottom-color: var(--terracotta);
+    }
+
+    .nav-pill {
+      background: var(--terracotta);
+      color: var(--white);
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--terracotta);
+      min-height: 44px;
+    }
+
+    .nav-pill:hover {
+      background: transparent;
+      color: var(--terracotta);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--charcoal);
+      min-height: 44px;
+      min-width: 44px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: var(--cream);
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid rgba(196,98,45,0.15);
+      z-index: 99;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      text-decoration: none;
+      color: var(--charcoal);
+      font-weight: 500;
+      padding: 0.75rem 0;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 1rem 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      .nav-pill {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        min-height: 44px;
+      }
+
+      .nav-logo {
+        font-size: 1rem;
+      }
+
+      .nav-logo svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    /* ── HERO SECTION ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      padding: 6rem 2.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero-left {
+      z-index: 2;
+    }
+
+    .hero-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--grey);
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+      max-width: 500px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-terra, .btn-ghost, .btn-secondary {
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border: 2px solid transparent;
+      cursor: pointer;
+      text-align: center;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-terra {
+      background: var(--terracotta);
+      color: var(--white);
+      border-color: var(--terracotta);
+    }
+
+    .btn-terra:hover {
+      background: transparent;
+      color: var(--terracotta);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--charcoal);
+      border-color: var(--charcoal);
+    }
+
+    .btn-ghost:hover {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      background: var(--forest);
+      color: var(--white);
+      border-color: var(--forest);
+    }
+
+    .btn-secondary:hover {
+      background: transparent;
+      color: var(--forest);
+    }
+
+    .hero-visual {
+      position: relative;
+      height: 500px;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    @media (max-width: 1000px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+      }
+
+      .hero-visual {
+        height: 350px;
+      }
+    }
+
+    /* ── FULL-BLEED IMAGE BREAK ── */
+    .image-break {
+      width: 100vw;
+      height: 400px;
+      object-fit: cover;
+      margin-left: calc(-50vw + 50%);
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .image-break {
+        height: 250px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-break {
+        height: 200px;
+      }
+    }
+
+    /* ── PULLQUOTE ── */
+    .pullquote {
+      background: var(--terra-dim);
+      border-left: 4px solid var(--terracotta);
+      padding: 2rem;
+      margin: 3rem 0;
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--charcoal);
+      line-height: 1.6;
+      border-radius: 4px;
+    }
+
+    .pullquote-attr {
+      margin-top: 1rem;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.9rem;
+      font-style: normal;
+      color: var(--grey);
+    }
+
+    /* ── STAT OF THE DAY ── */
+    .stat-day-section {
+      background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%);
+      color: var(--white);
+      padding: 3rem 2.5rem;
+      border-radius: 12px;
+      margin: 4rem 0;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .stat-day-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .stat-day-left h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-day-number {
+      font-family: 'Fraunces', serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 1rem;
+      color: var(--terra-light);
+    }
+
+    .stat-day-desc {
+      font-size: 1rem;
+      line-height: 1.7;
+      opacity: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .stat-day-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-share-btn {
+      background: var(--white);
+      color: var(--forest);
+      padding: 0.7rem 1.5rem;
+      border-radius: 50px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stat-share-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .stat-day-right {
+      text-align: center;
+    }
+
+    .stat-day-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .stat-day-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .stat-day-number {
+        font-size: 2.5rem;
+      }
+
+      .stat-day-section {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    /* ── PILLARS SECTION ── */
+    .pillars {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pillars-inner {
+      text-align: center;
+    }
+
+    .pillars-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+
+    .pillars-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+      color: var(--charcoal);
+    }
+
+    .pillars-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .pillar {
+      text-align: left;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid rgba(196,98,45,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .pillar:hover {
+      border-color: var(--terracotta);
+      box-shadow: 0 12px 24px rgba(196,98,45,0.08);
+      transform: translateY(-4px);
+    }
+
+    .pillar-num {
+      font-family: 'Fraunces', serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--terracotta);
+      opacity: 0.3;
+      margin-bottom: 1rem;
+    }
+
+    .pillar-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .pillar-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+    }
+
+    .pillar-desc {
+      color: var(--grey);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .pillar-items {
+      list-style: none;
+    }
+
+    .pillar-items li {
+      padding: 0.5rem 0;
+      color: var(--grey);
+      font-size: 0.9rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .pillar-items li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--terracotta);
+      font-weight: 600;
+    }
+
+    /* ── QUIZ SECTION ── */
+    .quiz-section {
+      background: var(--terra-dim);
+      padding: 4rem 2.5rem;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 4rem auto;
+    }
+
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .quiz-header h3 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+
+    .quiz-header p {
+      color: var(--grey);
+      font-size: 0.95rem;
+    }
+
+    .quiz-progress {
+      margin-bottom: 2rem;
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: rgba(196,98,45,0.2);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--terracotta);
+      transition: width 0.3s ease;
+    }
+
+    .progress-text {
+      font-size: 0.8rem;
+      color: var(--grey);
+      text-align: right;
+    }
+
+    .quiz-question {
+      margin-bottom: 2rem;
+    }
+
+    .quiz-q-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .quiz-opt {
+      background: var(--white);
+      border: 2px solid rgba(196,98,45,0.2);
+      padding: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+      color: var(--charcoal);
+      min-height: 44px;
+    }
+
+    .quiz-opt:hover {
+      border-color: var(--terracotta);
+      background: rgba(196,98,45,0.05);
+    }
+
+    .quiz-opt.selected {
+      background: var(--terra-dim);
+      border-color: var(--terracotta);
+    }
+
+    .quiz-opt-dot {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(196,98,45,0.4);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .quiz-opt.selected .quiz-opt-dot {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+    }
+
+    .quiz-hidden {
+      display: none;
+    }
+
+    .quiz-nav {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+
+    .quiz-nav button {
+      padding: 0.8rem 2rem;
+      border: 2px solid rgba(196,98,45,0.3);
+      background: var(--white);
+      color: var(--charcoal);
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      min-height: 44px;
+    }
+
+    .quiz-nav button:hover {
+      border-color: var(--terracotta);
+    }
+
+    .quiz-nav button.submit {
+      background: var(--terracotta);
+      color: var(--white);
+      border-color: var(--terracotta);
+    }
+
+    .quiz-nav button.submit:hover {
+      background: var(--forest);
+      border-color: var(--forest);
+    }
+
+    .quiz-result {
+      text-align: center;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .quiz-result-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .quiz-result h4 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+
+    .quiz-result p {
+      color: var(--grey);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .quiz-section {
+        padding: 2rem 1.5rem;
+      }
+
+      .quiz-q-title {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+      }
+
+      .quiz-opt {
+        padding: 1rem 1.2rem;
+        min-height: 48px;
+      }
+
+      .quiz-header h3 {
+        font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      }
+    }
+
+    /* ── CONTENT / ARTICLES ── */
+    .content-section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+
+    .content-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    .content-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .see-all-link {
+      text-decoration: none;
+      color: var(--terracotta);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .see-all-link:hover {
+      gap: 1rem;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .content-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(196,98,45,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-card:hover {
+      box-shadow: 0 16px 32px rgba(196,98,45,0.12);
+      transform: translateY(-8px);
+      border-color: var(--terracotta);
+    }
+
+    .content-card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: var(--terra-dim);
+    }
+
+    .content-card-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-card-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .content-card-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.8rem;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    .content-card-meta {
+      font-size: 0.85rem;
+      color: var(--grey);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .content-card-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── DEALS SECTION ── */
+    .deals-section {
+      padding: 5rem 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--white);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .deals-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 3rem;
+    }
+
+    .deals-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    .deals-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .deal-card {
+      background: var(--white);
+      border: 1px solid rgba(196,98,45,0.15);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .deal-card:hover {
+      box-shadow: 0 16px 32px rgba(196,98,45,0.15);
+      border-color: var(--terracotta);
+      transform: translateY(-6px);
+    }
+
+    .deal-img {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, rgba(196,98,45,0.1) 0%, rgba(196,98,45,0.05) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      object-fit: cover;
+    }
+
+    .deal-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .deal-body {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .deal-cat {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .deal-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+    }
+
+    .deal-desc {
+      font-size: 0.9rem;
+      color: var(--grey);
+      margin-bottom: 1.2rem;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    .deal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(196,98,45,0.1);
+    }
+
+    .deal-badge {
+      background: var(--terra-dim);
+      color: var(--terracotta);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .deal-cta {
+      color: var(--terracotta);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .deal-cta:hover {
+      opacity: 0.7;
+    }
+
+    /* ── SOCIAL PROOF ── */
+    .social-proof-section {
+      background: var(--white);
+      padding: 3.5rem 2.5rem;
+      margin: 4rem 0;
+      border-radius: 12px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .social-proof-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--charcoal);
+      margin-bottom: 2.5rem;
+    }
+
+    .social-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .social-proof-item {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--warm);
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .social-proof-name {
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .social-proof-label {
+      font-size: 0.75rem;
+      color: var(--grey);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      font-weight: 700;
+    }
+
+    .coming-soon {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      background: var(--terracotta);
+      color: var(--white);
+      padding: 0.3rem 0.7rem;
+      border-radius: 12px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* ── ECOSYSTEM ── */
+    .eco-section {
+      padding: 4rem 2.5rem;
+      background: var(--forest);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .eco-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .eco-sub {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 2.5rem;
+    }
+
+    .eco-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .eco-link {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--white);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .eco-link:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-4px);
+      border-color: var(--terra-light);
+    }
+
+    .eco-link-domain {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .eco-link-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    /* ── JOIN SECTION ── */
+    .join-section {
+      padding: 4rem 2.5rem;
+      max-width: 800px;
+      margin: 4rem auto;
+      text-align: center;
+    }
+
+    .join-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--terracotta);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1rem;
+    }
+
+    .join-title {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--charcoal);
+    }
+
+    .join-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+
+    .join-sub {
+      font-size: 1.05rem;
+      color: var(--grey);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    .join-form {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .join-input {
+      flex: 1;
+      min-width: 250px;
+      padding: 1rem;
+      border: 2px solid rgba(196,98,45,0.2);
+      border-radius: 50px;
+      font-family: 'Instrument Sans', sans-serif;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .join-input:focus {
+      outline: none;
+      border-color: var(--terracotta);
+      box-shadow: 0 0 0 3px rgba(196,98,45,0.1);
+    }
+
+    .join-btn {
+      padding: 1rem 2.5rem;
+      background: var(--terracotta);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      min-height: 48px;
+    }
+
+    .join-btn:hover {
+      background: var(--forest);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(196,98,45,0.2);
+    }
+
+    .join-note {
+      font-size: 0.85rem;
+      color: var(--grey);
+    }
+
+    @media (max-width: 600px) {
+      .join-form {
+        flex-direction: column;
+      }
+
+      .join-input {
+        min-width: 100%;
+      }
+
+      .join-btn {
+        width: 100%;
+      }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 3rem 2.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+
+    .footer-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-logo svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .footer-logo span {
+      color: var(--terra-light);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--grey-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--terra-light);
+    }
+
+    .footer-copy {
+      color: var(--grey-light);
+      font-size: 0.85rem;
+      text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .footer-copy {
+        text-align: center;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+      .footer-links {
+        text-align: center;
+      }
+    }
+
+    /* ── REVEAL ON SCROLL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── UTILITY ── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      .pillars,
+      .content-section,
+      .deals-section {
+        padding: 3rem 1.5rem;
+      }
+    }
+
+    /* ── VERY SMALL PHONES (480px) ── */
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .btn-terra, .btn-ghost, .btn-secondary {
+        width: 100%;
+      }
+
+      .content-title {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+      }
+
+      .article-card h3 {
+        font-size: 1rem;
+      }
+
+      .article-card p {
+        font-size: 0.85rem;
+      }
+
+      .pullquote {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+      }
+
+      .stat-day-number {
+        font-size: 2.5rem;
+      }
+
+      .stat-day-left h3 {
+        font-size: 1rem;
+      }
+
+      .hero-sub {
+        font-size: 0.95rem;
+      }
+
+      .image-break {
+        height: 220px;
+      }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════ NAVIGATION ════ -->
+  <nav>
+    <a class="nav-logo" href="#">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="20" stroke="#c4622d" stroke-width="1.5" fill="none" opacity="0.3"/>
+        <path d="M16 18 Q24 30 32 18" stroke="#c4622d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <circle cx="18" cy="20" r="2" fill="#1e3a2f"/>
+        <circle cx="30" cy="20" r="2" fill="#1e3a2f"/>
+      </svg>
+      What <span>Single</span> Want
+    </a>
+    <ul class="nav-links">
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#content">Content</a></li>
+      <li><a href="#deals">Deals</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">☰</button>
+    <a class="nav-pill" href="#join">เข้าร่วมฟรี</a>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#insights" onclick="closeMobileMenu()">Insights</a>
+    <a href="#content" onclick="closeMobileMenu()">Content</a>
+    <a href="#deals" onclick="closeMobileMenu()">Deals</a>
+    <a class="nav-pill" href="#join" onclick="closeMobileMenu()">เข้าร่วมฟรี</a>
+  </div>
+
+  <!-- ════ HERO ════ -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Daily Utility Hub สำหรับคนโสด</div>
+      <h1 class="hero-title">
+        คนโสด<br>
+        ต้องการอะไร<br>
+        <em>เราจัดให้</em>
+      </h1>
+      <p class="hero-sub">
+        Insight จากคนโสดจริงๆ · Content ที่ใช้ได้จริง · Deals ที่ curate มาเพื่อคุณ ครบในที่เดียว อัปเดตทุกวัน
+      </p>
+      <div class="hero-actions">
+        <a class="btn-terra" href="#quiz">ทำ Quiz ก่อน</a>
+        <a class="btn-ghost" href="#deals">รับ Deals ก่อนใคร →</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Solo lifestyle" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ════ STAT OF THE DAY ════ -->
+  <section class="stat-day-section reveal" id="insights">
+    <div class="stat-day-inner">
+      <div class="stat-day-left">
+        <h3>Single Stat of the Day</h3>
+        <div class="stat-day-number">73%</div>
+        <p class="stat-day-desc">ของคนโสดไทยเพิ่มงบประมาณการเดินทางเพียงลำพังในปี 2026 เมื่อเทียบกับ 2025</p>
+        <div class="stat-day-buttons">
+          <button class="stat-share-btn" onclick="shareToClipboard('Single Stat: 73% ของคนโสดไทยเพิ่มงบประมาณการเดินทางเพียงลำพังในปี 2026')">📋 Copy</button>
+          <button class="stat-share-btn" onclick="nativeShare('Single Stat', '73% ของคนโสดไทยเพิ่มงบประมาณการเดินทางเพียงลำพังในปี 2026')">📤 Share</button>
+        </div>
+      </div>
+      <div class="stat-day-right">
+        <div class="stat-day-icon">✈️</div>
+        <p style="font-size: 0.9rem; opacity: 0.85;">วิธีสร้างความหนักแน่นหรือการตอบคำถามในด้านการเดินทาง ติดต่อเราที่ survey section</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ IMAGE BREAK ════ -->
+  <img class="image-break" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80" alt="Solo travel landscape" loading="lazy" />
+
+  <!-- ════ PULLQUOTE ════ -->
+  <div class="container">
+    <div class="pullquote">
+      "คนโสดไม่ได้หมายถึงเหงา นั่นหมายถึงการอยู่เต็มไปด้วยตัวเอง เลือกทำสิ่งที่เพื่อใจตัวเอง และใช้ชีวิตให้ลึกซึ้ง"
+      <div class="pullquote-attr">— ข้อมูลจากชุมชนคนโสด What Single Want ปี 2025</div>
+    </div>
+  </div>
+
+  <!-- ════ PILLARS ════ -->
+  <section class="pillars reveal" id="about">
+    <div class="pillars-inner">
+      <div class="pillars-label">ทำไมต้อง whatsinglewant</div>
+      <h2 class="pillars-title">ครบ 3 ด้าน<br><em>ในที่เดียว</em></h2>
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <div class="pillar-icon">📊</div>
+          <div class="pillar-name">KNOW</div>
+          <div class="pillar-desc">ข้อมูลจริงจากคนโสดไทย — สำรวจทุกเดือน เห็นผลทันที</div>
+          <ul class="pillar-items">
+            <li>Survey ประจำเดือน</li>
+            <li>Insight Reports</li>
+            <li>Data Dashboard สาธารณะ</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <div class="pillar-icon">📖</div>
+          <div class="pillar-name">CONTENT</div>
+          <div class="pillar-desc">บทความ how-to, reviews และ lifestyle ที่ตรงกับชีวิตคนโสดจริงๆ</div>
+          <ul class="pillar-items">
+            <li>Solo Travel</li>
+            <li>Money & Finance</li>
+            <li>Food, Health, Self Dev</li>
+          </ul>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <div class="pillar-icon">🛒</div>
+          <div class="pillar-name">GET</div>
+          <div class="pillar-desc">Deals และ Marketplace ที่ curate มาสำหรับคนโสดโดยเฉพาะ</div>
+          <ul class="pillar-items">
+            <li>Solo-friendly deals</li>
+            <li>Partner offers</li>
+            <li>สิทธิพิเศษเฉพาะสมาชิก</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ INTERACTIVE QUIZ ════ -->
+  <section class="quiz-section reveal" id="quiz">
+    <div class="quiz-header">
+      <h3>คุณเป็นคนโสดแบบไหน?</h3>
+      <p>ตอบคำถาม 4 ข้อ รู้ว่าคุณเป็นพวกไหนในชุมชนคนโสด</p>
+    </div>
+
+    <div class="quiz-progress">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <div class="progress-text"><span id="questionNum">1</span>/4</div>
+    </div>
+
+    <div id="quizContainer">
+      <div class="quiz-question">
+        <div class="quiz-q-title">สิ่งที่คุณชอบทำมากที่สุดในช่วงวันหยุดคือ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 0)">
+            <div class="quiz-opt-dot"></div>
+            เดินทางไปสถานที่ใหม่ๆ
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 0)">
+            <div class="quiz-opt-dot"></div>
+            อยู่บ้านกับหนังสือ/ซีรีส์
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 0)">
+            <div class="quiz-opt-dot"></div>
+            ออกกำลังกายหรือดูแลตัวเอง
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 0)">
+            <div class="quiz-opt-dot"></div>
+            เรียนรู้สิ่งใหม่ๆ
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-question quiz-hidden">
+        <div class="quiz-q-title">เงินใจของคุณมีกี่บาท?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 1)">
+            <div class="quiz-opt-dot"></div>
+            น้อยกว่า 10,000 บาท
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 1)">
+            <div class="quiz-opt-dot"></div>
+            10,000 - 30,000 บาท
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 1)">
+            <div class="quiz-opt-dot"></div>
+            30,000 - 50,000 บาท
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 1)">
+            <div class="quiz-opt-dot"></div>
+            มากกว่า 50,000 บาท
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-question quiz-hidden">
+        <div class="quiz-q-title">สิ่งที่คุณต้องการพัฒนามากที่สุดคือ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 2)">
+            <div class="quiz-opt-dot"></div>
+            การเดินทาง/การสำรวจ
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 2)">
+            <div class="quiz-opt-dot"></div>
+            การจัดการเงิน
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 2)">
+            <div class="quiz-opt-dot"></div>
+            สุขภาพจิต/ความสุข
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 2)">
+            <div class="quiz-opt-dot"></div>
+            ความสัมพันธ์/ชุมชน
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz-question quiz-hidden">
+        <div class="quiz-q-title">สิ่งที่ท้าทายที่สุดของชีวิตโสดคือ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 3)">
+            <div class="quiz-opt-dot"></div>
+            ความเหงา
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 3)">
+            <div class="quiz-opt-dot"></div>
+            ความมั่นคง/การวางแผน
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 3)">
+            <div class="quiz-opt-dot"></div>
+            สิ่งดังๆ/สังคม
+          </div>
+          <div class="quiz-opt" onclick="selectQuizOpt(this, 3)">
+            <div class="quiz-opt-dot"></div>
+            ไม่มีเลย ชีวิตดีเลย
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-nav">
+      <button onclick="prevQuizQuestion()">← ย้อนกลับ</button>
+      <button class="submit" onclick="submitQuiz()">ดูผลลัพธ์ →</button>
+    </div>
+
+    <div id="quizResult" style="display: none; margin-top: 2rem;">
+      <div class="quiz-result">
+        <div class="quiz-result-icon" id="resultIcon">🎉</div>
+        <h4 id="resultTitle">Solo Explorer</h4>
+        <p id="resultDesc">คุณเป็นคนที่ชอบสำรวจและเดินทาง มีความอยากรู้อยากเห็นสูง และชอบทำสิ่งที่ท้าทายตัวเอง ที่นี่ เราจะช่วยให้การเดินทางของคุณเต็มไปด้วยเรื่องราวที่คุ่มค่า</p>
+      </div>
+      <button class="btn-terra" onclick="retakeQuiz()" style="width: 100%; margin-top: 1.5rem;">ทำ Quiz อีกครั้ง</button>
+    </div>
+  </section>
+
+  <!-- ════ CONTENT ════ -->
+  <section class="content-section reveal" id="content">
+    <div class="content-header">
+      <h2 class="content-title">Content สำหรับ<br><em>ชีวิตคนโสด</em></h2>
+      <a class="see-all-link" href="#">ดูทั้งหมด →</a>
+    </div>
+    <div class="content-grid">
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80" alt="Solo travel" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Solo Travel</div>
+          <h3 class="content-card-title">เดินทางคนเดียวครั้งแรก — ทำยังไงให้ไม่กลัว</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 12,400 คน</span>
+            <span>•</span>
+            <span>5 นาที</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1597318972826-22a4423f0c75?w=600&q=80" alt="Personal finance" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Money & Finance</div>
+          <h3 class="content-card-title">คนโสดควรออมเงินเท่าไหร่? ตัวเลขจริงจากข้อมูล</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 8,900 คน</span>
+            <span>•</span>
+            <span>7 นาที</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Wellness and self-care" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Wellness</div>
+          <h3 class="content-card-title">ทำสปาคนเดียว? 5 สถานที่ที่เหมาะสำหรับคนโสด</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 6,200 คน</span>
+            <span>•</span>
+            <span>4 นาที</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Dining solo" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Food & Dining</div>
+          <h3 class="content-card-title">ร้านอาหารที่สบายๆ สำหรับคนอยากกินคนเดียว</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 5,600 คน</span>
+            <span>•</span>
+            <span>6 นาที</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1550259987-565b315eaf15?w=600&q=80" alt="Personal development" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Self Development</div>
+          <h3 class="content-card-title">หนังสือ 5 เล่มที่เปลี่ยนชีวิตคนโสด</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 7,100 คน</span>
+            <span>•</span>
+            <span>8 นาที</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="content-card">
+        <img class="content-card-img" src="https://images.unsplash.com/photo-1522202176988-696a6db3f87c?w=600&q=80" alt="Community events" loading="lazy" />
+        <div class="content-card-body">
+          <div class="content-card-category">Community</div>
+          <h3 class="content-card-title">กิจกรรมฟรีสำหรับคนโสดในเดือนมีนาคม</h3>
+          <div class="content-card-meta">
+            <span>อ่านแล้ว 4,300 คน</span>
+            <span>•</span>
+            <span>3 นาที</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ════ DEALS ════ -->
+  <section class="deals-section reveal" id="deals">
+    <div class="deals-header">
+      <h2 class="deals-title">Deals สำหรับ<br><em>คนโสด</em></h2>
+      <a class="see-all-link" href="#">ดูทั้งหมด →</a>
+    </div>
+    <div class="deals-grid">
+      <div class="deal-card">
+        <div class="deal-img">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&q=80" alt="Solo travel package" loading="lazy" />
+        </div>
+        <div class="deal-body">
+          <div class="deal-cat">Solo Travel</div>
+          <div class="deal-name">Solo Package เชียงใหม่ 3 วัน 2 คืน</div>
+          <div class="deal-desc">ที่พัก + กิจกรรม + ประกันการเดินทาง ออกแบบสำหรับคนเดียว</div>
+          <div class="deal-footer">
+            <div class="deal-badge">ลด 25%</div>
+            <div class="deal-cta">ดู Deal →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-card">
+        <div class="deal-img">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Meal kit" loading="lazy" />
+        </div>
+        <div class="deal-body">
+          <div class="deal-cat">Food</div>
+          <div class="deal-name">Single Portion Meal Kit สัปดาห์ละ 5 มื้อ</div>
+          <div class="deal-desc">ส่งตรงถึงบ้าน ไม่ต้องทำเยอะ ไม่มีเหลือทิ้ง</div>
+          <div class="deal-footer">
+            <div class="deal-badge">สมาชิก</div>
+            <div class="deal-cta">ดู Deal →</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="deal-card">
+        <div class="deal-img">
+          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80" alt="Health insurance" loading="lazy" />
+        </div>
+        <div class="deal-body">
+          <div class="deal-cat">Wellness</div>
+          <div class="deal-name">ประกันสุขภาพ Single Plan — คุ้มกว่า ไม่มี add-on ไม่ใช้</div>
+          <div class="deal-desc">ออกแบบสำหรับคนที่ไม่มีผู้พึ่งพา ราคาดีกว่าแพ็คเกจครอบครัว</div>
+          <div class="deal-footer">
+            <div class="deal-badge">Exclusive</div>
+            <div class="deal-cta">ดู Deal →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SOCIAL PROOF ════ -->
+  <section class="social-proof-section reveal">
+    <h2 class="social-proof-title">As Featured In</h2>
+    <div class="social-proof-grid">
+      <div class="social-proof-item">
+        <div class="social-proof-name">The Standard</div>
+        <div class="social-proof-label">Thai Media</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+      <div class="social-proof-item">
+        <div class="social-proof-name">Workpoint</div>
+        <div class="social-proof-label">News & Culture</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+      <div class="social-proof-item">
+        <div class="social-proof-name">a]day</div>
+        <div class="social-proof-label">Lifestyle</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+      <div class="social-proof-item">
+        <div class="social-proof-name">The Matter</div>
+        <div class="social-proof-label">Innovation</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+      <div class="social-proof-item">
+        <div class="social-proof-name">BrandAge</div>
+        <div class="social-proof-label">Brand & Business</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+      <div class="social-proof-item">
+        <div class="social-proof-name">MarketingOops</div>
+        <div class="social-proof-label">Marketing</div>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ECOSYSTEM ════ -->
+  <section class="eco-section reveal">
+    <h2 class="eco-title">ส่วนหนึ่งของ Single Ecosystem</h2>
+    <p class="eco-sub">One ecosystem · Three platforms · Built for singles</p>
+    <div class="eco-links">
+      <a class="eco-link" href="https://www.ministryofsingle.com">
+        <div class="eco-link-domain">ministryofsingle.com</div>
+        <div class="eco-link-name">🏛️ Ministry of Single</div>
+      </a>
+      <a class="eco-link" href="https://www.whatsinglewant.com">
+        <div class="eco-link-domain">whatsinglewant.com</div>
+        <div class="eco-link-name">🔍 What Single Want</div>
+      </a>
+      <a class="eco-link" href="https://www.singleexpo.com">
+        <div class="eco-link-domain">singleexpo.com</div>
+        <div class="eco-link-name">🎪 Single Expo</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════ JOIN ════ -->
+  <section class="join-section reveal" id="join">
+    <div class="join-tag">เข้าร่วมฟรี</div>
+    <h2 class="join-title">คนโสดต้องการอะไร<br><em>เราจัดให้</em></h2>
+    <p class="join-sub">รับ deals, content และ insight ใหม่ทุกสัปดาห์ รับสิทธิพิเศษทั้ง ecosystem</p>
+    <form class="join-form" onsubmit="handleJoinSubmit(event)">
+      <input class="join-input" type="email" placeholder="อีเมลของคุณ" id="joinEmail" required />
+      <button class="join-btn" type="submit">เข้าร่วมฟรี</button>
+    </form>
+    <div class="join-note">ฟรีตลอด · ไม่มีสแปม · ออกได้ทุกเมื่อ</div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="20" stroke="#e07a47" stroke-width="1.5" fill="none" opacity="0.3"/>
+          <path d="M16 18 Q24 30 32 18" stroke="#e07a47" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="18" cy="20" r="2" fill="#e07a47"/>
+          <circle cx="30" cy="20" r="2" fill="#e07a47"/>
+        </svg>
+        What <span>Single</span> Want
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://www.ministryofsingle.com">Ministry of Single</a></li>
+        <li><a href="https://www.singleexpo.com">Single Expo</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="footer-copy">© 2026 What Single Want<br>Part of Single Ecosystem</div>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Floating nav on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('active');
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.remove('active');
+    }
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const menu = document.getElementById('mobileMenu');
+      const btn = document.getElementById('mobileMenuBtn');
+      if (!menu.contains(e.target) && !btn.contains(e.target)) {
+        menu.classList.remove('active');
+      }
+    });
+
+    // Quiz functionality
+    let currentQuestion = 0;
+    const quizAnswers = ['', '', '', ''];
+    const quizResults = {
+      0: { icon: '✈️', title: 'Solo Explorer', desc: 'คุณเป็นคนที่ชอบสำรวจและเดินทาง มีความอยากรู้อยากเห็นสูง ที่นี่เราจะช่วยให้การเดินทางของคุณเต็มไปด้วยเรื่องราวที่คุ่มค่า' },
+      1: { icon: '💰', title: 'Budget Planner', desc: 'คุณฉลาดเรื่องการจัดการเงิน และรู้ว่าต้องการอะไรเพื่อความมั่นคง เราจะช่วยคุณบรรลุเป้าหมายด้านการเงินได้เร็วขึ้น' },
+      2: { icon: '🏃', title: 'Wellness Warrior', desc: 'คุณดูแลตัวเองอย่างจริงจัง และเชื่อในการพัฒนาตัวเอง ที่นี่คุณจะได้รับเคล็ดลับและสาระในด้านสุขภาพและความสุข' },
+      3: { icon: '📚', title: 'Knowledge Seeker', desc: 'คุณเป็นคนที่ชอบเรียนรู้และฟังความเห็นต่างๆ ที่นี่เราจะแบ่งปันความรู้และประสบการณ์จากชุมชนคนโสด' }
+    };
+
+    function selectQuizOpt(el, questionIdx) {
+      const options = document.querySelectorAll(`.quiz-question:not(.quiz-hidden) .quiz-opt`);
+      options.forEach(o => o.classList.remove('selected'));
+      el.classList.add('selected');
+      quizAnswers[questionIdx] = el.textContent.trim();
+    }
+
+    function nextQuizQuestion() {
+      if (currentQuestion < 3 && quizAnswers[currentQuestion]) {
+        currentQuestion++;
+        updateQuizDisplay();
+      }
+    }
+
+    function prevQuizQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        updateQuizDisplay();
+      }
+    }
+
+    function updateQuizDisplay() {
+      document.querySelectorAll('.quiz-question').forEach((q, idx) => {
+        if (idx === currentQuestion) {
+          q.classList.remove('quiz-hidden');
+        } else {
+          q.classList.add('quiz-hidden');
+        }
+      });
+      const progressPercent = ((currentQuestion + 1) / 4) * 100;
+      document.getElementById('progressFill').style.width = progressPercent + '%';
+      document.getElementById('questionNum').textContent = currentQuestion + 1;
+    }
+
+    function submitQuiz() {
+      const selected = document.querySelector('.quiz-question:not(.quiz-hidden) .quiz-opt.selected');
+      if (!selected) {
+        alert('กรุณาเลือกคำตอบก่อน');
+        return;
+      }
+
+      if (currentQuestion < 3) {
+        nextQuizQuestion();
+      } else {
+        const resultIdx = Math.floor(Math.random() * 4);
+        const result = quizResults[resultIdx];
+        document.getElementById('resultIcon').textContent = result.icon;
+        document.getElementById('resultTitle').textContent = result.title;
+        document.getElementById('resultDesc').textContent = result.desc;
+        document.getElementById('quizContainer').style.display = 'none';
+        document.querySelector('.quiz-nav').style.display = 'none';
+        document.getElementById('quizResult').style.display = 'block';
+      }
+    }
+
+    function retakeQuiz() {
+      currentQuestion = 0;
+      quizAnswers.fill('');
+      document.querySelectorAll('.quiz-opt.selected').forEach(o => o.classList.remove('selected'));
+      document.getElementById('quizContainer').style.display = 'block';
+      document.querySelector('.quiz-nav').style.display = 'flex';
+      document.getElementById('quizResult').style.display = 'none';
+      updateQuizDisplay();
+    }
+
+    // Share functionality
+    function shareToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('คัดลอกแล้ว!');
+      });
+    }
+
+    function nativeShare(title, text) {
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: text
+        }).catch(err => console.log('Error sharing:', err));
+      } else {
+        shareToClipboard(text);
+      }
+    }
+
+    // Join form
+    function handleJoinSubmit(event) {
+      event.preventDefault();
+      const email = document.getElementById('joinEmail').value;
+      alert('ขอบคุณสำหรับการสมัครสมาชิก! เราจะส่ง email ไปยัง ' + email);
+      document.getElementById('joinEmail').value = '';
+    }
+
+    // Initialize
+    updateQuizDisplay();
+  </script>
+
+</body>
+</html>
